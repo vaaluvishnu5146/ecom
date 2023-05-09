@@ -5,7 +5,12 @@ async function getQueryParams() {
   return params;
 }
 async function getFilteredDataFromJson() {
-  const response = await fetch("../mocks/products.json");
+  const response = await fetch("../mocks/products.json", {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+    },
+  });
   const data = await response.json();
   const { product } = await getQueryParams();
   return data["data"].find((d) => d.id == product);

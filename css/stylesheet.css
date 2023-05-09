@@ -1,0 +1,113 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*menubar*/
+
+.menubar {
+  margin: 0px 0px 20px 0px;
+  padding: 0px 50px 0px 50px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  height: 50px;
+}
+.link {
+  list-style: none;
+  display: flex;
+}
+.link li a {
+  padding: 0px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+/* body */
+
+.body1 {
+  padding: 20px 50px 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 15px;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+}
+.products-container {
+  display: flex;
+  align-items: center;
+}
+.product1 {
+  padding: 10px;
+  height: 215px;
+  width: 150px;
+  border: 1px solid black;
+  align-items: center;
+  box-sizing: border-box;
+}
+.product1 img {
+  height: 130px;
+  width: 130px;
+}
+.product1 h1 {
+  font-size: 15px;
+  color: red;
+}
+
+/* service request */
+
+.form1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.form {
+  padding: 30px 30px;
+  width: 300px;
+  border: solid 2px;
+}
+.form div h1 {
+  font-size: 20px;
+}
+.button {
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  padding: 2px 7px;
+}
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+/* footer */
+
+.footer {
+  margin: 20px 0px 0px 0px;
+  display: flex;
+  background-color: red;
+  padding: 20px 50px 20px 50px;
+  align-items: center;
+  justify-content: center;
+}
+.footer div a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px;
+  font-size: 17px;
+}

@@ -46,10 +46,9 @@ async function getDataFromJson() {
 async function renderProducts() {
   const container = document.getElementsByClassName("products-container")[0];
   const products = await getDataFromJson();
-  console.log(products);
   const elements = [];
   products.forEach((data) => {
-    const el = `<a href="item.html?product=${data.id}">
+    const el = `<a href="product.html?product=${data.id}">
         <div class="product1">
           <img src="${data.productPicture}" alt="noimg" />
           <h1>${data.productName}</h1>
